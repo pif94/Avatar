@@ -35,11 +35,11 @@ public class AvatarJFrame extends javax.swing.JFrame {
     }
 
     public int getAvatarLabelWidth() {
-        return AvatarLabel1.getWidth();
+        return backgroundAvatarBodyLabel.getWidth();
     }
 
     public int getAvatarLabelHeight() {
-        return AvatarLabel1.getHeight();
+        return backgroundAvatarBodyLabel.getHeight();
     }
 
     /**
@@ -51,11 +51,11 @@ public class AvatarJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLayeredPane2 = new javax.swing.JLayeredPane();
-        AvatarLabel1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        pricipalPanel = new javax.swing.JPanel();
+        mainAvatarLayeredPane = new javax.swing.JLayeredPane();
+        backgroundAvatarBodyLabel = new javax.swing.JLabel();
+        fataLabel = new javax.swing.JLabel();
+        saveButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -65,15 +65,15 @@ public class AvatarJFrame extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1000, 700));
         setResizable(false);
 
-        AvatarLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        AvatarLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        AvatarLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AvatarLabel1.setText("Av");
-        AvatarLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
-        AvatarLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        AvatarLabel1.setOpaque(true);
-        AvatarLabel1.setHorizontalAlignment(JLabel.CENTER);
-        AvatarLabel1.setVerticalAlignment(JLabel.CENTER);
+        backgroundAvatarBodyLabel.setBackground(new java.awt.Color(255, 255, 255));
+        backgroundAvatarBodyLabel.setForeground(new java.awt.Color(255, 255, 255));
+        backgroundAvatarBodyLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        backgroundAvatarBodyLabel.setText("Av");
+        backgroundAvatarBodyLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        backgroundAvatarBodyLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        backgroundAvatarBodyLabel.setOpaque(true);
+        backgroundAvatarBodyLabel.setHorizontalAlignment(JLabel.CENTER);
+        backgroundAvatarBodyLabel.setVerticalAlignment(JLabel.CENTER);
         ImageReader imageReader = new ImageReader("Resources\\C.jpg");
         BufferedImage image = imageReader.getImage();
         int maxWidth = 1000; // Adjust this value as needed
@@ -83,10 +83,10 @@ public class AvatarJFrame extends javax.swing.JFrame {
         int scaledHeight = (int) (image.getHeight() * scale);
         Image scaledImage = image.getScaledInstance(scaledWidth, scaledHeight, Image.SCALE_SMOOTH);
         ImageIcon imageIcon = new ImageIcon(scaledImage);
-        AvatarLabel1.setIcon(imageIcon);
-        AvatarLabel1.setPreferredSize(new Dimension(scaledWidth, scaledHeight));
+        backgroundAvatarBodyLabel.setIcon(imageIcon);
+        backgroundAvatarBodyLabel.setPreferredSize(new Dimension(scaledWidth, scaledHeight));
         setLayout(new BorderLayout());
-        add(AvatarLabel1, BorderLayout.CENTER);
+        add(backgroundAvatarBodyLabel, BorderLayout.CENTER);
 
         ImageReader imageReader2 = new ImageReader("Resources\\B.png");
         BufferedImage image2 = imageReader2.getImage();
@@ -98,64 +98,64 @@ public class AvatarJFrame extends javax.swing.JFrame {
         Image scaledImage2 = image2.getScaledInstance(scaledWidth2, scaledHeight2, Image.SCALE_SMOOTH);
         ImageIcon imageIcon2 = new ImageIcon(scaledImage2);
 
-        jLabel1.setIcon(imageIcon2);
-        jLabel1.setPreferredSize(new Dimension(scaledWidth2, scaledHeight2));
+        fataLabel.setIcon(imageIcon2);
+        fataLabel.setPreferredSize(new Dimension(scaledWidth2, scaledHeight2));
         setLayout(new BorderLayout());
-        add(jLabel1, BorderLayout.CENTER);
+        add(fataLabel, BorderLayout.CENTER);
 
-        jLayeredPane2.setLayer(AvatarLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane2.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        mainAvatarLayeredPane.setLayer(backgroundAvatarBodyLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        mainAvatarLayeredPane.setLayer(fataLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(jLayeredPane2);
-        jLayeredPane2.setLayout(jLayeredPane2Layout);
-        jLayeredPane2Layout.setHorizontalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
+        javax.swing.GroupLayout mainAvatarLayeredPaneLayout = new javax.swing.GroupLayout(mainAvatarLayeredPane);
+        mainAvatarLayeredPane.setLayout(mainAvatarLayeredPaneLayout);
+        mainAvatarLayeredPaneLayout.setHorizontalGroup(
+            mainAvatarLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainAvatarLayeredPaneLayout.createSequentialGroup()
                 .addContainerGap(120, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(113, 113, 113))
-            .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(AvatarLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
+            .addGroup(mainAvatarLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(backgroundAvatarBodyLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
         );
-        jLayeredPane2Layout.setVerticalGroup(
-            jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane2Layout.createSequentialGroup()
+        mainAvatarLayeredPaneLayout.setVerticalGroup(
+            mainAvatarLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainAvatarLayeredPaneLayout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(439, Short.MAX_VALUE))
-            .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                    .addComponent(AvatarLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 661, Short.MAX_VALUE)
+            .addGroup(mainAvatarLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainAvatarLayeredPaneLayout.createSequentialGroup()
+                    .addComponent(backgroundAvatarBodyLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 661, Short.MAX_VALUE)
                     .addContainerGap()))
         );
 
-        jButton1.setText("Save");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        saveButton.setText("Save");
+        saveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                saveButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout pricipalPanelLayout = new javax.swing.GroupLayout(pricipalPanel);
+        pricipalPanel.setLayout(pricipalPanelLayout);
+        pricipalPanelLayout.setHorizontalGroup(
+            pricipalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pricipalPanelLayout.createSequentialGroup()
                 .addContainerGap(385, Short.MAX_VALUE)
-                .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainAvatarLayeredPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(263, 263, 263)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(saveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        pricipalPanelLayout.setVerticalGroup(
+            pricipalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pricipalPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane2)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pricipalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mainAvatarLayeredPane)
+                    .addGroup(pricipalPanelLayout.createSequentialGroup()
+                        .addComponent(saveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -164,25 +164,25 @@ public class AvatarJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pricipalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pricipalPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
         int x = 0;
         int y = 0;
-        int width = AvatarLabel1.getWidth();
-        int height = AvatarLabel1.getHeight();
+        int width = backgroundAvatarBodyLabel.getWidth();
+        int height = backgroundAvatarBodyLabel.getHeight();
 
         try {
-            Point labelLocation = AvatarLabel1.getLocationOnScreen();
+            Point labelLocation = backgroundAvatarBodyLabel.getLocationOnScreen();
             x = labelLocation.x;
             y = labelLocation.y;
 
@@ -214,7 +214,7 @@ public class AvatarJFrame extends javax.swing.JFrame {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(this, "A luat foc laptopul");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_saveButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -243,11 +243,11 @@ public class AvatarJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AvatarLabel1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLayeredPane jLayeredPane2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel backgroundAvatarBodyLabel;
+    private javax.swing.JLabel fataLabel;
+    private javax.swing.JLayeredPane mainAvatarLayeredPane;
+    private javax.swing.JPanel pricipalPanel;
+    private javax.swing.JButton saveButton;
     // End of variables declaration//GEN-END:variables
 
 }
