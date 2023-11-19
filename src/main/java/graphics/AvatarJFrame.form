@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection component="Form" name="getIconImage" type="method"/>
+    </Property>
+    <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
+      <Point value="[0, 0]"/>
+    </Property>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1000, 700]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="385" max="32767" attributes="0"/>
+                  <Component id="jLayeredPane2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="263" max="-2" attributes="0"/>
+                  <Component id="jButton1" min="-2" pref="91" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLayeredPane2" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jButton1" min="-2" pref="38" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JLayeredPane" name="jLayeredPane2">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="120" max="32767" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Component id="AvatarLabel1" alignment="1" pref="396" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace pref="439" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="AvatarLabel1" pref="661" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="AvatarLabel1">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Av"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Crosshair Cursor"/>
+                </Property>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel()"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="AvatarLabel1.setHorizontalAlignment(JLabel.CENTER);&#xa;    AvatarLabel1.setVerticalAlignment(JLabel.CENTER);&#xa;    ImageReader imageReader = new ImageReader(&quot;Resources\\C.jpg&quot;);&#xa;    BufferedImage image = imageReader.getImage();&#xa;    int maxWidth = 1000; // Adjust this value as needed&#xa;    int maxHeight = 700; // Adjust this value as needed&#xa;    double scale = Math.min((double) maxWidth / image.getWidth(), (double) maxHeight / image.getHeight());&#xa;    int scaledWidth = (int) (image.getWidth() * scale);&#xa;    int scaledHeight = (int) (image.getHeight() * scale);&#xa;    Image scaledImage = image.getScaledInstance(scaledWidth, scaledHeight, Image.SCALE_SMOOTH);&#xa;    ImageIcon imageIcon = new ImageIcon(scaledImage);&#xa;    AvatarLabel1.setIcon(imageIcon);&#xa;    AvatarLabel1.setPreferredSize(new Dimension(scaledWidth, scaledHeight));&#xa;    setLayout(new BorderLayout());&#xa;    add(AvatarLabel1, BorderLayout.CENTER);"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="ImageReader imageReader2 = new ImageReader(&quot;Resources\\B.png&quot;);&#xa;BufferedImage image2 = imageReader2.getImage();&#xa;int fixedWidth2 = 200;&#xa;int fixedHeight2 = 200;&#xa;double scale2 = Math.min((double) fixedWidth2 / image2.getWidth(), (double) fixedHeight2 / image2.getHeight());&#xa;int scaledWidth2 = (int) (image2.getWidth() * scale2);&#xa;int scaledHeight2 = (int) (image2.getHeight() * scale2);&#xa;Image scaledImage2 = image2.getScaledInstance(scaledWidth2, scaledHeight2, Image.SCALE_SMOOTH);&#xa;ImageIcon imageIcon2 = new ImageIcon(scaledImage2);&#xa;&#xa;jLabel1.setIcon(imageIcon2);&#xa;jLabel1.setPreferredSize(new Dimension(scaledWidth2, scaledHeight2));&#xa;setLayout(new BorderLayout());&#xa;add(jLabel1, BorderLayout.CENTER);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="jButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
