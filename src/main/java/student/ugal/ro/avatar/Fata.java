@@ -14,7 +14,7 @@ public class Fata extends Avatar {
         this.eyeColor = "Alb";
         this.index = 0;
         this.namePng = "";
-        this.wink  = false;
+        this.wink = false;
     }
 
     public Fata(String eyeColor, int index, String namePng, int layer, int[] backgroundColor, int pozitieX, int pozitieY)
@@ -24,10 +24,10 @@ public class Fata extends Avatar {
         this.eyeColor = eyeColor;
         this.index = index;
         this.namePng = namePng;
-        this.wink  = false;
+        this.wink = false;
     }
-    
-    public Fata(Avatar Av,Fata F)
+
+    public Fata(Avatar Av, Fata F)
     {
         super(Av);
         this.blinking = F.blinking;
@@ -36,7 +36,7 @@ public class Fata extends Avatar {
         this.namePng = F.namePng;
         this.wink = F.wink;
     }
-    
+
     public boolean getBlinking()
     {
         return this.blinking;
@@ -46,6 +46,7 @@ public class Fata extends Avatar {
     {
         this.blinking = blinking;
     }
+
     //mod subtil de a indica faptul că avatarul este interactiv
     public void blink()
     {
@@ -53,7 +54,7 @@ public class Fata extends Avatar {
         if (!getBlinking())
         {
             setBlinking(true);
-           // System.out.println(blinking);
+            // System.out.println(blinking);
             try
             {
                 Thread.sleep(500);
@@ -74,15 +75,17 @@ public class Fata extends Avatar {
             setBlinking(false);
         }
     }
+
     //pentru alegere daca ochi sunt inchisi sau nu
-    public void wink(){
-        this.wink=!this.wink;
+    public void wink()
+    {
+        this.wink = !this.wink;
     }
 
     @Override
     public String toString()
     {
-        return "Fata cu ochii de culoare = "+this.eyeColor+" ,cu indexul = "+this.index+" cu nume fisier png = "+this.namePng+" ochii inchisi = "+this.wink;
+        return super.toString() + "\nFata cu ochii de culoare = " + this.eyeColor + " ,cu indexul = " + this.index + " cu nume fisier png = " + this.namePng + " ochii inchisi = " + this.wink;
     }
 
 }

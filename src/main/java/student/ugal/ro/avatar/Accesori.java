@@ -104,7 +104,7 @@ public class Accesori extends Avatar {
     @Override
     public String toString()
     {
-        return super.toString()+"Accesoriul este gros = " + this.gros + "cu coloarea = " + this.color + " oglindit = " + this.mirrored + ", cu indexul = " + this.index + ", nume fiser .png=" + this.numePng;
+        return super.toString() +"\nAccesoriul este gros = " + this.gros + "cu coloarea = " + this.color + " oglindit = " + this.mirrored + ", cu indexul = " + this.index + ", nume fiser .png=" + this.numePng;
     }
 
 }
